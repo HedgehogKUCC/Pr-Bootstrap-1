@@ -480,4 +480,5 @@ $(target).on('shown.bs.modal', function () {
 			})
 		})
 	});
+</script>
 ```
