@@ -231,8 +231,7 @@
       </div>
     </section>
 
-    <section class="py-5 bg-light text-white" style="position: relative">
-      <div class="container-fluid">
+    <section class="container-fluid py-5 bg-light text-white" style="position: relative">
         <div class="row">
           <div
             class="col-md-5 bg-cover"
@@ -266,7 +265,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="py-5">
@@ -779,7 +777,9 @@
     <!-- 修改 Modal 小bug -->
     <script>
       $(document).ready(function() {
+
         console.log('ready');
+        
         $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function() {
           console.log('click');
 
