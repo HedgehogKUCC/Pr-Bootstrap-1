@@ -4,7 +4,7 @@
 
 ## Bootstrap Template + Font Awesome
 
-``` html
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -80,7 +80,7 @@
 
 ### .container - 限制寬度
 
-```
+```html
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -130,7 +130,7 @@
 
 `text-md-dark` : 寬度 768px 以上時文字變 #333
 
-```
+```html
  <section class="container-fluid py-5 bg-light text-white" style="position: relative">
         <div class="row">
           <div
@@ -145,7 +145,7 @@
                 <h3>歡迎來到六角餐廳</h3>
 ```
 
-```
+```css
 @media (min-width: 768px) {
 	.text-md-dark { color: #333; }
 }
@@ -161,7 +161,7 @@
 
 盡量不要寫在 `.col-md-6` 同一層
 
-```
+```html
  <section class="py-5">
       <div class="container">
         <h2 class="text-center my-3 pb-5">如何這麼美味</h2>
@@ -185,7 +185,7 @@
 
 `text-truncate` : 會將超出的文字顯示成 ···
 
-```
+```html
 <section class="container-fluid bg-light py-5 text-white" style="position: relative;">
       <div class="row flex-md-row-reverse">
         <div class="container text-md-dark">
@@ -205,7 +205,7 @@
 
 將 `width` 改為 `100%`
 
-```
+```html
 <iframe src="..." width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 ```
 
@@ -219,7 +219,7 @@
 
 但主流的瀏覽器都可以使用 !
 
-```
+```html
 <input
 	type="text"
 	class="form-control"
@@ -235,7 +235,7 @@
 
 在 `form` 加入 `class="needs-validation"` `novalidate`
 
-```
+```html
 <form action="" class="needs-validation" novalidate>
 ```
 
@@ -243,7 +243,7 @@
 
 內容**有效**回饋
 
-```
+```html
 <div class="valid-feedback">
 	Looks good!
 </div>
@@ -253,7 +253,7 @@
 
 內容**無效**回饋
 
-```
+```html
 <div class="invalid-feedback">
 	請填入姓名 !!!
 </div>
@@ -263,7 +263,7 @@
 
 記得在 `</form>` 後面加上 `script`
 
-```
+```javascript
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
@@ -302,7 +302,7 @@
 
 所以可以在這邊加上 `style="background-image: url(...)"`
 
-```
+```html
 <div class="row">
 	<div class="col-md-6" style="background-image: url(...)">
 		<div class="row">
@@ -322,7 +322,7 @@
 
 將 `data-toggle="modal"` `data-target="#loginModal"` 加入
 
-```
+```html
 <a href="#" class="btn btn-outline-primary mr-1" data-toggle="modal" data-target="#loginModal">登入</a>
 ```
 
@@ -335,7 +335,7 @@
 - `data-target="#loginModal"`
 - `id="loginModal"`
 
-```
+```html
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -366,7 +366,7 @@
 
 `class="mr-auto"` : 與右邊 button 產生距離
 
-```
+```html
 <a
 	href="#"
 	class="mr-auto"
@@ -387,7 +387,7 @@
 
 讓註冊頁面變好看
 
-```
+```css
 @media (min-width: 576px) {
 	.modal-dialog-register {
 		max-width: 700px;
@@ -413,7 +413,7 @@
 
 使用 `jQuery`
 
-```
+```javascript
 $(document).ready( function() {
 	console.log('ready');
 });
@@ -453,7 +453,7 @@ Events : `shown.bs.modal` 完全顯示 modal 後
 
 在 `body` 加入 Class `modal-open`
 
-```
+```javascript
 $(target).on('shown.bs.modal', function () {
 	$('body').addClass('modal-open');
 })
@@ -463,7 +463,7 @@ $(target).on('shown.bs.modal', function () {
 
 完整程式碼
 
-```
+```javascript
 <script>
 	$(document).ready(function() {
 	
